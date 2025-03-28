@@ -1,103 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oferecemos serviços de qualidade para atender suas necessidades.">
     <title>Serviços de Qualidade</title>
     <link rel="stylesheet" href="index.css"> 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #f15b05;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-
-        .services, .testimonials {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .services h2, .testimonials h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .service-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .service-card {
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-            width: 250px;
-        }
-
-        .service-card h3 {
-            font-size: 1.8rem;
-        }
-
-        .service-card p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .testimonials p {
-            font-style: italic;
-            color: #333;
-            margin: 20px 0;
-        }
-
-        footer {
-            background-color: #f15b05;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-    </style>
-
-
 
 </head>
 
+
+
 <body>
     <header>
-        <h1>Ajudaê</h1>
         <nav>
+            <a href="">Ajudaê</a> <!-- adicionar logo no canto esquerdo -->
             <a href="#home">Início</a>
             <a href="#services">Serviços</a>
-            <a href="#testimonials">Depoimentos</a>
-            <a href="#contact">Contato</a>
+            <a href="#testimonials">Depoimentos</a> <!-- vamos tirar esse botão?-->
+            
         </nav>
+
+
     </header>
 
-  
+
+    <button type="button" id="btnCadastro">Cadastro</button> <!-- pagina de cadastro vai vir daqui--> 
+    <script>
+        document.getElementById("btnCadastro").addEventListener("click", function() {
+        window.location.href = "cadastro.html";
+});
+</script>  <!-- ficou bugado quando tentei jogar dentro do header-nav -->
 
     <section class="services" id="services">
         <h2>Nosso serviço para você</h2>
@@ -133,6 +66,8 @@
       window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
       formbutton("create", {action: "https://formspree.io/f/xwplqgwv"})
     </script>
+<!--<script src="utilities.js"></script>
+-->
   
 
 </body>

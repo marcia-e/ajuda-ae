@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
+
 header {
     background-color: #f15b05;
     color: white;
@@ -18,7 +18,7 @@ header h1 {
     margin: 0;
 }
 
-/* Navegação */
+
 nav a {
     color: white;
     margin: 0 15px;
@@ -30,17 +30,48 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.services, .testimonials {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2, .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
 
 
-
-/* Depoimentos */
 .testimonials p {
     font-style: italic;
     color: #333;
     margin: 20px 0;
 }
 
-/* Rodapé */
+
 footer {
     background-color: #f15b05;
     color: white;
