@@ -12,17 +12,6 @@ header {
     text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 .form-container {
     max-width: 600px;
     margin: 2rem auto;
@@ -66,22 +55,24 @@ nav a:hover {
     background-color: #e14e04;
 }
 
-.user-type-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.user-type-container label {
-    margin-right: 20px;
-}
-
-.specialty-group {
-    display: none;
-}
-
 footer {
     background-color: #f15b05;
     color: white;
     padding: 1rem 0;
     text-align: center;
 }
+
+.form-content{
+    display: none;
+}
+
+.form-content.active{
+    display: block;
+}
+
+.switch-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
