@@ -1,0 +1,24 @@
+**programação
+-->principal (acessar principais página que um usuário sem cadastro consegue)
+   |----->{depoimentos [final da página], "nossa missão" [centro da página]}
+  |--> botão cadastro/login
+  |--> chat fale conosco
+-->cadastro/login
+  |--> botão troca entre cadastro e login
+     |-->troca entre cadastro usuário-fornecedor
+-->perfil
+  |--> botão sair
+  |--> botão excluir conta e dados
+-->pesquisa profissionais
+
+**banco de dados
+-->usuários database
+  |--> clientes
+     |-->nome, cpf, telefone, e-mail, nome de usuário e senha (pelo menos)
+  |--> fornecedores
+     |-->nome, cnpj/cpf, telefone, e-mail, nome de usuário e senha (pelo menos)
+
+**documentação
+--> teórico (problemática da contratação de serviços e o paradigma do trabalho informal)
+  |-->
+--> prático (ferramentas e tecnologias empregadas na solução do problema)
