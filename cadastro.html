@@ -21,6 +21,7 @@
             <div class="switch-btns">
               <button id="btn-login">Login</button>
               <button id="btn-cadastro">Cadastro</button>
+              <button id="btn-cadastro-prestador">Cadastro prestador</button>
         </div>
 
         <form id="form-login" method="post" class="form-content active">
@@ -39,10 +40,7 @@
                 <input type="text" id="name" name="name" required><br>           
             
                 <label for="email">E-mail</label><br>
-                <input type="email" id="email" name="email" required><br>            
-            
-                <label for="CPF">CPF</label><br>
-                <input type="CPF" id="CPF" name="CPF" required><br>        
+                <input type="email" id="email" name="email" required><br>                   
             
                 <label for="password">Senha</label><br>
                 <input type="password" id="password" name="password" required><br>           
@@ -52,6 +50,30 @@
 
                 <input type="submit" value="Cadastrar">
                
+        </form>
+
+        <form id="form-cadastro-prestador" method="post" class="form-content" action="/cadastrarP">
+
+                <label for="name">Nome Completo</label><br>
+                <input type="text" id="name" name="name" required><br>           
+            
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" required><br>                   
+            
+                <label for="password">Senha</label><br>
+                <input type="password" id="password" name="password" required><br>           
+            
+                <label for="phone">Telefone</label><br>
+                <input type="tel" id="phone" name="phone" required> <br>   
+
+                <label for="especialidade">Especialidade</label><br>
+                <input type="text" id="especialidade" name="especialidade" required> <br>  
+
+                <label for="descricao">Descrição dos serviços</label><br>
+                <input type="text" id="description" name="description"> <br>  
+
+                <input type="submit" value="Cadastrar" >
+
         </form>
     </section>
 
@@ -69,6 +91,8 @@
     <script src="scripts/utilities.js"></script>
     <script src="scripts/formbutton.js"></script>
     <script src="scripts/button-forms-cadastro-login.js"></script>
+    <script src="scripts/fetch-req-cadastro-login.js"></script>
+    <script src="scripts/login-script.js"></script>
 
 
 </body>
