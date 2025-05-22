@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Prestadores - Ajudaê</title>
+</head>
+<body>
+  <h1>Buscar Prestadores por Especialidade</h1>
+
+  <form id="form-busca">
+    <label for="especialidade">Especialidade:</label>
+    <input type="text" id="especialidade" name="especialidade" required>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <ul id="resultados"></ul>
+
+  <script>
+    const form = document.getElementById('form-busca');
+    const resultados = document.getElementById('resultados');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const especialidade = document.getElementById('especialidade').value;
+
+      const resposta = await fetch(`/buscar-prestadores?especialidade=${encodeURIComponent(especialidade)}`);
+      const dados = await resposta.json();
+
+      resultados.innerHTML = '';
+
+      if (dados.length === 0) {
+        resultados.innerHTML = '<li>Nenhum prestador encontrado</li>';
+        return;
+      }
+
+      dados.forEach(prestador => {
+        console.log(prestador);
+        const li = document.createElement('li');
+        li.textContent = `${prestador.NOME} - ${prestador.ESPECIALIDADE} - ${prestador.TELEFONE} - ${prestador.DESCRICAO}`;
+        resultados.appendChild(li);
+      });
+    });
+  </script>
+</body>
+</html>

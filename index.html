@@ -12,49 +12,91 @@
 
 
 <body>
-    <header>
-        <nav>
-            <a href="">Ajudaê</a> <!-- adicionar logo no canto esquerdo -->
-            <a href="#home">Início</a>
-            <a href="#services">Serviços</a>
-            <a href="#testimonials">Depoimentos</a> <!-- vamos tirar esse botão?-->
-            <button type="button" id="btnCadastro">Cadastro/Login</button>
+    <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="logo">
+        <!-- Logo aqui -->
+        <h1>🤝 Ajudaê</h1>
+        <p class="slogan">A ajuda que você procura está aqui</p>
+      </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Serviços</a></li>                        
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Depoimentos</a></li> <!-- vamos tirar esse botão?-->
+            <li><button type="button" id="btnCadastro">Cadastro/Login</button></li>
+            </ul>
         </nav>
-
-
     </header>
 
+    <!-- slogan, abaixo do logo -->
+  <section class="hero">
+   <div style="display: flex;"> 
+    <div class="container hero-conteudo">
+      <h2>Bem-vindo ao Ajudaê!</h2>
+      <p>Economize tempo, evite dor de cabeça e resolva o que precisa com quem entende do assunto.</p>
+    </div>
+    <div class="img-personagem">
+        <!-- Imagem do mascote aqui -->
+        <div class="mascote-placeholder">[Mascote]</div>
+    </div>
+   </div> 
+  </section>
 
-    <!-- pagina de cadastro vai vir daqui--> 
 
-    <section class="services" id="services">
-        <h2>Nosso serviço para você</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Serviços</h3>
-                <p>Encontre o profissional perfeito para seu serviço.</p>
-            </div>
-            <div class="service-card">
-                <h3>Praticidade</h3>
-                <p>Agende uma visita com um de nossos prestadores do conforto de sua casa</p>
-            </div>
-            <div class="service-card">
-                <h3>Seja um Prestador</h3>
-                <p>Potencialize sua presença online com seu Portfólio de serviços</p>
-            </div>
+  <section class="sobre">
+    <div class="container sobre-conteudo">
+      <div class="img-personagem">
+        <!-- Imagem do mascote aqui -->
+        <div class="mascote-placeholder">[Mascote]</div>
+      </div>
+      <div class="texto">
+        <p>
+          Aqui, conectar você aos melhores prestadores de serviços é a nossa missão. Precisa de um eletricista, encanador, pintor, diarista ou qualquer outro profissional?
+        </p>
+        <p>
+          No Ajudaê, você encontra especialistas confiáveis e avaliados por outros clientes, prontos para te ajudar com rapidez, qualidade e segurança.
+        </p>
+        <p>
+          É simples: você faz a sua busca, compara orçamentos e escolhe quem melhor atende às suas necessidades. Tudo isso em poucos cliques!
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="equipe">
+    <div class="container">
+        <h5>Depoimentos</h5>
+        <h3>Confira o que os nossos clientes dizem<br>sobre nossa plataforma:</h3>
+      <div class="membros">
+        <div class="membro"><h4>Peg Legge</h4><p>CEO</p></div>
+        <div class="membro"><h4>Richard Guerra</h4><p>CTO</p></div>
+        <div class="membro"><h4>Alexandra Stolz</h4><p>DESIGNER</p></div>
+        <div class="membro"><h4>Janet Bray</h4><p>DEVELOPER</p></div>
+      </div>
+      <div class="talentos">
+        <p>Veja o resultado de alguns dos nossos<br>prestadores parceiros:</p>
+        <div class="membros">
+          <div class="membro"><h4>Peg Legge</h4><p>CEO</p></div>
+          <div class="membro"><h4>Richard Guerra</h4><p>CTO</p></div>
+          <div class="membro"><h4>Alexandra Stolz</h4><p>DESIGNER</p></div>
+          <div class="membro"><h4>Janet Bray</h4><p>DEVELOPER</p></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+    
 
-    <section class="testimonials" id="testimonials">
-        <h2>O que dizem nossos clientes</h2>
-        <p>"Agora consigo muito mais serviços graças ao Ajudaê. Estou mais eficiente e rentável!" - João Silva</p>
-        <p>"Ficou muito mais prático resolver os problemas em casa com o Ajudaê." - Maria Oliveira</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Ajudaê | Busque ou seja um prestador de serviços</p>
-        <p>Entre em contato conosco: contato@Ajudae.com.br</p>
-    </footer>
+  <footer class="rodape">
+    <div class="container rodape-conteudo" style="display: flex; justify-content: center;">
+      <div class="icones-sociais" style="padding-right: 25px;">
+        <span>📺 📷 🐦 📌 🎵 🟢</span>
+      </div>
+      <p>© Ajudaê, 2025. All rights reserved.</p>
+    </div>
+  </footer>
 
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
@@ -62,8 +104,8 @@
       formbutton("create", {action: "https://formspree.io/f/xwplqgwv"})
     </script>
   
-<script src="scripts/utilities.js"></script>
-<script src="scripts/formbutton.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/formbutton.js"></script>
 
 </body>
 

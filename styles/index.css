@@ -13,73 +13,120 @@ header {
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+.topo {
+  background-color: #ffa44d;
+  padding: 20px 0;
+}
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 28px;
+  color: #003366;
+}
+.slogan {
+  font-size: 12px;
+  color: #fff;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: #000;
+}
+.login-btn {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background: #eee;
+  cursor: pointer;
 }
 
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
+.hero {
+  background-color: #ffa44d;
+  color: white;
+  text-align: left;
+  padding: 60px 20px;
+}
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.hero p {
+  max-width: 400px;
+  font-size: 16px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.sobre {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.img-personagem .mascote-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.texto p {
+  margin-bottom: 15px;
 }
 
-.services, .testimonials {
-    padding: 2rem;
-    text-align: center;
+.equipe {
+  background-color: #00b0b9;
+  padding: 60px 20px;
+  color: #fff;
+}
+.membros {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.membro {
+  background: white;
+  color: black;
+  padding: 20px;
+  width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.talentos h5 {
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.talentos h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.talentos p {
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
-.services h2, .testimonials h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.rodape {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
-
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 250px;
-}
-
-.service-card h3 {
-    font-size: 1.8rem;
-}
-
-.service-card p {
-    font-size: 1rem;
-    color: #555;
-}
-
-
-.testimonials p {
-    font-style: italic;
-    color: #333;
-    margin: 20px 0;
-}
-
-
-footer {
-    background-color: #f15b05;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1rem;
-    margin: 0;
+.icones-sociais span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
