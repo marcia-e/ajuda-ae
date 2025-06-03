@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #f15b05;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.topo {
+  background-color: #ffa44d;
+  padding: 20px 0;
+}
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 28px;
+  color: #003366;
+}
+.slogan {
+  font-size: 12px;
+  color: #fff;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-content{
+    display: none;
+}
+
+.form-content.active{
+    display: block;
+}
+  .rodape {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.icones-sociais span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* Estilo geral para o container dos cards */
+#prestadoresContainer {
+    display: grid; /* Ou flex, dependendo do layout desejado */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 300px de largura mínima */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+}
+
+/* Estilo para cada card individual */
+.prestador-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prestador-card h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.prestador-card p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.prestador-card strong {
+    color: #444;
+}
+
+.prestador-card .contato-btn {
+    background-color: #007bff; /* Ou a cor que preferir */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.prestador-card .contato-btn:hover {
+    background-color: #0056b3;
+}

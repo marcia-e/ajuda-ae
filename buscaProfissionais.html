@@ -3,9 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Buscar Prestadores - Ajudaê</title>
+  <link rel="stylesheet" href="styles/buscaProfissionais.css">
 </head>
+
+
 <body>
-  <h1>Buscar Prestadores por Especialidade</h1>
+
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="logo">
+        <!-- Logo aqui -->
+        <h1><a href="index.html">🤝 Ajudaê</h1>
+        <p class="slogan">A ajuda que você procura está aqui</p>
+      </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Serviços</a></li>                        
+                <li><a href="#">FAQ</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="index.html#depoimentos">Depoimentos</a></li> <!-- vamos tirar esse botão?-->
+            <li><button type="button" id="btnCadastro">Cadastro/Login</button></li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+    <h1>Buscar Prestadores por Especialidade</h1>
 
   <form id="form-busca">
     <label for="especialidade">Especialidade:</label>
@@ -13,33 +35,23 @@
     <button type="submit">Buscar</button>
   </form>
 
-  <ul id="resultados"></ul>
+  <div id="prestadoresContainer"></div>
+  </main>
 
-  <script>
-    const form = document.getElementById('form-busca');
-    const resultados = document.getElementById('resultados');
+  <footer class="rodape">
+    <div class="container rodape-conteudo" style="display: flex; justify-content: center;">
+      <div class="icones-sociais" style="padding-right: 25px;">
+        <span>📺 📷 🐦 📌 🎵 🟢</span>
+      </div>
+      <p>© Ajudaê, 2025. All rights reserved.</p>
+    </div>
+  </footer>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const especialidade = document.getElementById('especialidade').value;
-
-      const resposta = await fetch(`/buscar-prestadores?especialidade=${encodeURIComponent(especialidade)}`);
-      const dados = await resposta.json();
-
-      resultados.innerHTML = '';
-
-      if (dados.length === 0) {
-        resultados.innerHTML = '<li>Nenhum prestador encontrado</li>';
-        return;
-      }
-
-      dados.forEach(prestador => {
-        console.log(prestador);
-        const li = document.createElement('li');
-        li.textContent = `${prestador.NOME} - ${prestador.ESPECIALIDADE} - ${prestador.TELEFONE} - ${prestador.DESCRICAO}`;
-        resultados.appendChild(li);
-      });
-    });
-  </script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      formbutton("create", {action: "https://formspree.io/f/xwplqgwv"})
+    </script>
+    <script src="scripts/search-bar.js"></script>
 </body>
 </html>
